@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins';
+    background: linear-gradient(45deg,#1d1d75,#2f3d6e);
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: yellow;
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #636baa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    box-shadow: 0 0 15px gray;
+    transition: 1s ease-in-out forwards;
+
+
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding: 15px;
+    border-radius: 20px;
+
+}
+.contact-inputs:focus{
+    border: 2px solid blue;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid white;
+    transition: .7 ease-in-out;
+
+}
+.contact-left button:hover{
+    
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+    
+}
+.contact-right img{
+    margin-left: 100px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px white;
+    
+}
+@media(max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+
+    }
+    .contact-right{
+        display: none;
+    }
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+     
+}
+.footer p{
+    margin: 0;
+    font-size: 18px;
+
+}
